@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+/*
+
+font-family: 'Libre Franklin', sans-serif;
+font-weights: 300, 600 & 700
+
+*/
+
+:root {
+	--Blue: hsl(223, 87%, 63%);
+	--Pale-Blue: hsl(223, 100%, 88%);
+	--Light-Red: hsl(354, 100%, 66%);
+	--Gray: hsl(0, 0%, 59%);
+	--Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+
+ul {
+	list-style: none;
+}
+
+button,
+input,
+select {
+	margin: 0;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+img,
+video {
+	height: auto;
+	max-width: 100%;
+}
+
+iframe {
+	border: 0;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+td,
+th {
+	padding: 0;
+}
+
+/* CUSTOM CSS - Mobile-First Approach: 375px */
+
+body {
+	font-family: "Libre Franklin", sans-serif;
+	min-height: 100vh;
+	gap: 4rem;
+	font-size: 1.25rem; /*20px*/
+	font-weight: 300;
+	background-color: white;
+}
+
+body,
+main,
+footer,
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+main {
+	padding: 5rem 2rem 2rem;
+}
+
+.logo {
+	width: 4rem;
+	margin-bottom: 2.5rem;
+}
+
+h1 {
+	font-size: 1.5rem;
+	color: var(--Gray);
+}
+
+p {
+	font-size: 0.85rem;
+	margin: 1.2rem 0 2rem;
+}
+
+h1 span {
+	color: black;
+	font-weight: 700;
+}
+
+form {
+	width: 18rem;
+	max-width: 50rem;
+	gap: 1rem;
+	margin-bottom: 4rem;
+}
+
+form div {
+	width: 100%;
+	margin-bottom: 0.8rem;
+}
+
+.input {
+	width: 100%;
+	padding: 0.8rem 1.2rem;
+	border: 1px solid var(--Pale-Blue);
+	border-radius: 1.4rem;
+}
+
+input[type="email"]::placeholder {
+	color: var(--Pale-Blue);
+}
+
+.errorText {
+	text-align: center;
+	font-size: 0.68rem;
+	font-style: italic;
+	margin-top: 2px;
+}
+
+button {
+	width: 100%;
+	padding: 0.8rem;
+	border: none;
+	font-size: 0.82rem;
+	font-weight: 600;
+	border-radius: 1.4rem;
+	color: white;
+	background-color: var(--Blue);
+	cursor: pointer;
+	box-shadow: 2px 5px 10px hsla(257, 40%, 9%, 0.2);
+	margin-top: -3rem;
+}
+
+button:hover {
+	opacity: 0.7;
+	transition: 0.4s ease-in-out;
+}
+
+.illustration {
+	width: 100%;
+	max-width: 45rem;
+}
+
+footer {
+	padding: 2rem 0 1.8rem;
+}
+
+.socials i {
+	height: 0.2rem;
+	width: 0.2rem;
+	color: var(--Blue);
+	border: 1px solid var(--Pale-Blue);
+	border-radius: 50%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0.92rem;
+	margin: 0 0.25rem;
+	cursor: pointer;
+}
+
+.socials i:hover {
+	border: var(--Blue);
+	color: white;
+	background-color: var(--Blue);
+	transition: 0.4s ease-in-out;
+}
+
+footer p {
+	font-size: 0.75rem;
+	color: var(--Gray);
+}
+
+/* -- MEDIA QUERIES -- */
+
+@media (min-width: 1024px) {
+	form {
+		width: 100%;
+		max-width: 44rem;
+		flex-direction: row;
+		align-items: baseline;
+	}
+
+	form div {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 0;
+	}
+
+	input {
+		width: 60%;
+	}
+
+	.input {
+		padding: 1rem 1.2rem;
+		border-radius: 1.5rem;
+	}
+
+	.errorText {
+		text-align: left;
+		font-size: 0.8rem;
+		padding-left: 1.5rem;
+	}
+
+	button {
+		width: 40%;
+		padding: 1.12rem 0.8rem;
+		border-radius: 1.5rem;
+	}
+
+	.logo {
+		width: 5rem;
+	}
+
+	h1 {
+		font-size: 2.5rem;
+	}
+
+	p {
+		font-size: 1rem;
+	}
+}
+
+@media (min-width: 1200px) {
+	form {
+		margin-bottom: 6rem;
+	}
+
+	.input {
+		font-size: 1rem;
+		padding: 1.4rem 2rem;
+		border-radius: 1.8rem;
+	}
+
+	.errorText {
+		margin-top: 0.8rem;
+		font-size: 1rem;
+	}
+
+	button {
+		padding: 1.2rem 0.8rem;
+		border-radius: 1.8rem;
+		font-size: 1.2rem;
+	}
+
+	.logo {
+		width: 6rem;
+	}
+
+	h1 {
+		font-size: 3.4rem;
+	}
+
+	p {
+		font-size: 1.5rem;
+	}
+
+	footer {
+		padding: 0 0 1.8rem;
+	}
+}
