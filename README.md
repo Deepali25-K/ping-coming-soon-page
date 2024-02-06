@@ -26,7 +26,7 @@ Mobile:
 
 ### Links
 
-- Live Site URL: [Code Demo]()
+- Live Site URL: [Code Demo](https://ping-coming-soon-page-deepali.netlify.app/)
 
 
 ### Built with
